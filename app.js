@@ -1,13 +1,11 @@
-// const person: {
-//     name: string;
-//     age: number;
-//     hobbies: 
-// } = {
 var person = {
     name: 'Maximilian',
     age: 30,
-    hobbies: ['Sports', 'Cooking']
+    hobbies: ['Sports', 'Cooking'],
+    role: [2, 'author']
 };
+person.role.push('admin');
+person.role[1] = 10;
 var favoriteActivities;
 favoriteActivities = ['Sports'];
 console.log(person.name);
