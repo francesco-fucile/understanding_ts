@@ -1,30 +1,8 @@
-// const person: {
-//     name: string;
-//     age: number;
-//     hobbies: string[];
-//     role: [number, string];
-// } = {
-//     name: 'Maximilian',
-//     age: 30,
-//     hobbies: ['Sports', 'Cooking'],
-//     role: [2, 'author']
-// };
-var Role;
-(function (Role) {
-    Role["ADMIN"] = "ADMIN";
-    Role[Role["READ_ONLY"] = 200] = "READ_ONLY";
-    Role[Role["AUTHOR"] = 300] = "AUTHOR";
-})(Role || (Role = {}));
-var person = {
-    name: 'Maximilian',
-    age: 30,
-    hobbies: ['Sports', 'Cooking'],
-    role: Role.ADMIN
-};
-var favoriteActivities;
-favoriteActivities = ['Sports'];
-console.log(person.name);
-for (var _i = 0, _a = person.hobbies; _i < _a.length; _i++) {
-    var hobby = _a[_i];
-    console.log(hobby.toUpperCase());
+function combine(input1, input2) {
+    var result = input1 + input2;
+    return result;
 }
+var combineAges = combine(30, 26);
+console.log(combineAges);
+var combinedNames = combine('Max', 'Anna');
+console.log(combinedNames);
