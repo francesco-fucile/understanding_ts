@@ -1,11 +1,26 @@
+// const person: {
+//     name: string;
+//     age: number;
+//     hobbies: string[];
+//     role: [number, string];
+// } = {
+//     name: 'Maximilian',
+//     age: 30,
+//     hobbies: ['Sports', 'Cooking'],
+//     role: [2, 'author']
+// };
+var Role;
+(function (Role) {
+    Role["ADMIN"] = "ADMIN";
+    Role[Role["READ_ONLY"] = 200] = "READ_ONLY";
+    Role[Role["AUTHOR"] = 300] = "AUTHOR";
+})(Role || (Role = {}));
 var person = {
     name: 'Maximilian',
     age: 30,
     hobbies: ['Sports', 'Cooking'],
-    role: [2, 'author']
+    role: Role.ADMIN
 };
-person.role.push('admin');
-person.role[1] = 10;
 var favoriteActivities;
 favoriteActivities = ['Sports'];
 console.log(person.name);
